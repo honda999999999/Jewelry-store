@@ -1,0 +1,73 @@
+<html>
+<head>
+    <title>Регистрация</title>
+    <h1>Форма регистрации</h1>
+</head>
+<style>
+    body {
+        background: rgba(238, 232, 170);
+    }
+</style>
+<body>
+    <form name="register">
+        <table border="1" width="25%" cellpadding="10">
+            <tbody>
+            <tr>
+                <td>Ваше имя:</td>
+                <td align="left"><input type="text" name="name" size="20"></td>
+            </tr>
+            <tr>
+                <td>Ник:</td>
+                <td align="left"><input type="text" name="nick" size="20"></td>
+            </tr>
+            <tr>
+                <td>Пароль:</td>
+                <td align="left"><input type="text" name="password" size="20"></td>
+            </tr>
+            <tr>
+                <td>Повтор пароля:</td>
+                <td align="left"><input type="text" name="password2" size="20"></td>
+            </tr>
+            <tr>
+                <td>Ваш e-mail:</td>
+                <td align="left"><input type="text" name="e-mail" size="20"></td>
+            </tr>
+            <tr>
+                <td>Фотография:</td>
+                <td align="left"><input type="file" name="photo" size="20"></td>
+            </tr>
+            <tr>
+                <td colspan="2">Ваши интересы:</td>
+            </tr>
+            <tr>
+                <td>
+                <input type="checkbox" name="Game" value="Game">Игры<br>
+                <input type="checkbox" name="Walk" value="Walk">Гулять<br>
+                <input type="checkbox" name="Travel" value="Travel">Путешествовать<br>
+                
+                <td>
+                <input type="checkbox" name="Take pictures" value="Take pictures">Фотографировать<br>
+                <input type="checkbox" name="Reading" value="Reading">Читать<br>
+                <input type="checkbox" name="Cooking" value="Cooking">Готовка<br>
+            </td>
+            </td>
+            </tr>
+            <tr>
+                <td>Ваш пол:</td>
+                <td>
+                    <input type="radio" name="s" value="male">Мужской
+                    <input type="radio" name="s" value="female">Женский
+                </td>
+            </tr> 
+        </tbody>
+        </table>
+        <p><textarea cols="50" rows="5">Несколько слов о себе.</textarea></p>
+        <tr>
+            <td colspan="2" align="center">
+            <input type="submit" value="Передать данные">
+            <input type="reset" value="Сброс данных">
+            </td>
+            </tr>    
+    </form>
+    </body>
+    </html>
