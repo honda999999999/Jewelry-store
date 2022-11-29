@@ -1,0 +1,591 @@
+    <!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>PUZIKOV</title>
+       
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <!--light-slider-files-->
+        <link rel="stylesheet" href="css/lightslider.css">
+        <!--SQuery-->
+        <script src="js/Jquery.js"></script>
+        
+        
+        <!--Лого на тайтле-->
+        <link rel="shortcut icon" href="images/logo.png">
+        <!--Шрифты для блока инф. Awesome-->
+        <script crossorigin="anonymous" src="https://kit.fontawesome.com/c8e4d183c2.js"></script>
+        <!--js-link--------------------->
+        <script src="js/Jquery.js"></script>
+        <script src="js/lightslider.js"></script>
+
+
+    </head>
+    <body>
+        <!--Блок соц.информации-->
+     <nav>
+
+        <!--Соц.сети и моб.телефон-->
+        <div class="social-call">
+            <!--Соц.сети-->
+            <div class="social">
+            <a href="#"><i class="fa fa-vk"></i></a>
+            <a href="#"><i class="fa fa-instagram"></i></a>
+            <a href="#"><i class="fa fa-google-plus"></i></a>
+            <a href="#"><i class="fa fa-odnoklassniki"></i></a>
+            
+        </div>
+        <!--Моб.телефон-->
+        <div class="phone">
+            <span>+79236382832</span>
+        </div>
+    </div>
+    <!-Навигация-->
+    <div class="navigation">
+        <!--Главный логотип-->
+        <a href="index.html" class="logo">
+            <img src="images/main logo.png">
+        </a>
+        <!--Меню-->
+        <ul class="menu">
+            <li><a href="index.html">Начало</a></li>
+
+            <li><a href="index 2.html">Мужское</a>
+            <!--Скидки-->
+            <span class="sale-table">Sale</span>
+            </li>
+            <li><a href="index 3.html">Женское</a></li>
+            <li><a href="index 4.html">Унисекс</a></li>
+            <li><a href="#">Детское</a></li>
+        </ul>
+        <!--Меню справо-->
+        <div class="right-menu">
+            <!--Поиск иконка-->
+            <a href="#" class="search">
+                <i class="fas fa-search"></i>
+            </a>
+            <!--Пользователь иконка-->
+            <a href="#">
+                <i class="fas fa-user"></i>
+            </a>
+            <!--Иконка-->
+            <a href="#">
+                <i class="fas fa-shopping-cart">
+                <!--Количество товаров корзине-->
+                <span class="num-cart-product">0</span>
+            </i>
+            </a>
+        </div>
+    </div>
+    </nav>   
+    <!--Поле поиска-->
+    <div class="search-bar">
+        <div class="search-input">
+            <input type="text" placeholder="Найти товар" name="search" />
+            <a href="javascript:void(0);" class="search-cancel">
+                <i class="fas fa-times"></i>
+            </a>
+        </div>
+    </div>
+    
+    <!--script-->
+    <script type="text/javascript">
+    /*-----For Search Bar-----------------------------*/
+    $(document).on('click','.search',function(){
+        $('.search-bar').addClass('search-bar-active')
+    });
+    
+    $(document).on('click','.search-cancel',function(){
+        $('.search-bar').removeClass('search-bar-active')
+    });
+/*-----For slider-----------------------------*/
+    $(document).ready(function() {
+    $('#adaptive').lightSlider({
+        adaptiveHeight:true,
+        auto:true,
+        item:1,
+        slideMargin:0,
+        loop:true
+    });
+});
+/*-----Feature-slider-----------------------------*/
+    $(document).ready(function() {
+    $('#autoWidth').lightSlider({
+        autoWidth:true,
+        loop:true,
+        onSliderLoad: function() {
+            $('#autoWidth').removeClass('cS-hidden');
+        } 
+    });  
+  });
+    </script>
+</div>
+
+<!-----------full-slider----------------------------->
+<ul id="adaptive" class="cs-hidden">
+    <!-box-1-->
+    <li class="item-a">
+        <!--box-->
+        <div class="full-slider-box f-slide-1">
+            <!--slider-text-container-->
+            <div class="slider-text-container">
+        
+            <div class="f-slider-text">
+                <span>Успей купить</span>
+                <strong>Скидка 30% с <font>промокодом</font></strong>
+                <a href="#" class="f-slider-btn">Купить сейчас</a>
+            </div>
+            </div>
+    </li>
+
+    <!-box-2-->
+    <li class="item-a">
+        <!--box-->
+        <div class="full-slider-box f-slide-2">
+            <!--slider-text-container-->
+            <div class="slider-text-container">
+        
+            <div class="f-slider-text">
+                <span>Успей купить</span>
+                <strong>Скидка 30% с <font>промокодом</font></strong>
+                <a href="#" class="f-slider-btn">Купить сейчас</a>
+            </div>
+            </div>
+    </li>
+
+    <!-box-3-->
+    <li class="item-a">
+        <!--box-->
+        <div class="full-slider-box f-slide-3">
+            <!--slider-text-container-->
+            <div class="slider-text-container">
+        
+            <div class="f-slider-text">
+                <span>Успей купить</span>
+                <strong>Скидка 30% с <font>промокодом</font></strong>
+                <a href="#" class="f-slider-btn">Купить сейчас</a>
+            </div>
+            </div>
+    </li>
+  
+</ul>
+
+<!--Избранные категории-->
+<div class="feature-heading">
+    <h2>Избранные категории</h2>
+</div>
+
+<ul id="autoWidth" class="cs-hidden">
+    <!--1---------------------------------------------->
+    <li class="item">
+        <!--box избранного-->
+    <div class="feature-box">
+    <a href="#">
+        <img src="images/feature_1.jpg"/>
+    </a>
+    </div>
+<!--Текст-->
+    <span>Золотые цепи</span>
+    </li>
+
+    <!--2---------------------------------------------->
+    <li class="item">
+        <!--box избранного-->
+    <div class="feature-box">
+    <a href="#">
+        <img src="images/feature_2.jpg"/>
+    </a>
+    </div>
+<!--Текст-->
+    <span>Золотые кольца</span>
+    </li> 
+
+    <!--3---------------------------------------------->
+    <li class="item">
+        <!--box избранного-->
+    <div class="feature-box">
+    <a href="#">
+        <img src="images/feature_3.jpg"/>
+    </a>
+    </div>
+<!--Текст-->
+    <span>Серьги</span>
+    </li> 
+
+    <!--4---------------------------------------------->
+    <li class="item">
+        <!--box избранного-->
+    <div class="feature-box">
+    <a href="#">
+        <img src="images/feature_4.jpg"/>
+    </a>
+    </div>
+<!--Текст-->
+    <span>Серебрянные кольца</span>
+    </li> 
+
+    <!--5---------------------------------------------->
+    <li class="item">
+        <!--box избранного-->
+    <div class="feature-box">
+    <a href="#">
+        <img src="images/feature_5.jpg"/>
+    </a>
+    </div>
+<!--Текст-->
+    <span>Серебрянные цепи</span>
+    </li> 
+
+    <!--6---------------------------------------------->
+    <li class="item">
+        <!--box избранного-->
+    <div class="feature-box">
+    <a href="#">
+        <img src="images/feature_6.jpg"/>
+    </a>
+    </div>
+<!--Текст-->
+    <span>Кольца с брилиантом</span>
+    </li> 
+</ul>
+<!--Новое-поступление-------------------------------->
+<section class="new-arrival">
+    <!--heading-------->
+    <div class="arrival-heading">
+        <strong>Новое поступление</strong>
+        <p>Мы создаем искусство! Cозданное из премиум материала</p>
+    </div>
+    <!--Товары из поступления-->
+    <div class="product-container">
+        <!--box1-->
+        <div class="product-box">
+            <!--Фото товара-->
+            <div class="product-img">
+                <!--Корзина товара-->
+            <a href="#" class="add-card">
+                <i class="fas fa-shopping-cart"></i>
+            </a>
+
+                <img src="images/p-1.png " />
+            </div>
+
+            <!--Описание-->
+            <div class="product-details">
+                <a href="#" class="p-name">"Сказочные" кольца</a>
+                <span class="p-price">23.000₽</span>
+            </div>
+
+        </div>
+
+        <!--box2-->
+        <div class="product-box">
+            <!--Фото товара-->
+            <div class="product-img">
+                <!--Корзина товара-->
+            <a href="#" class="add-card">
+                <i class="fas fa-shopping-cart"></i>
+            </a>
+
+                <img src="images/p-2.png " />
+            </div>
+
+            <!--Описание-->
+            <div class="product-details">
+                <a href="#" class="p-name">Кольца с редкими брилиантами</a>
+                <span class="p-price">145.000₽</span>
+            </div>
+
+        </div>
+
+        <!--box3-->
+        <div class="product-box">
+            <!--Фото товара-->
+            <div class="product-img">
+                <!--Корзина товара-->
+            <a href="#" class="add-card">
+                <i class="fas fa-shopping-cart"></i>
+            </a>
+
+                <img src="images/p-3.png " />
+            </div>
+
+            <!--Описание-->
+            <div class="product-details">
+                <a href="#" class="p-name">Серьги из материалов 1833г.</a>
+                <span class="p-price">75.000₽</span>
+            </div>
+
+        </div>
+
+        <!--box4-->
+        <div class="product-box">
+            <!--Фото товара-->
+            <div class="product-img">
+                <!--Корзина товара-->
+            <a href="#" class="add-card">
+                <i class="fas fa-shopping-cart"></i>
+            </a>
+
+                <img src="images/p-4.png " />
+            </div>
+
+            <!--Описание-->
+            <div class="product-details">
+                <a href="#" class="p-name">"Королевские" кольца</a>
+                <span class="p-price">250.000₽</span>
+            </div>
+
+        </div>
+
+        <!--box5-->
+        <div class="product-box">
+            <!--Фото товара-->
+            <div class="product-img">
+                <!--Корзина товара-->
+            <a href="#" class="add-card">
+                <i class="fas fa-shopping-cart"></i>
+            </a>
+
+                <img src="images/p-5.png " />
+            </div>
+
+            <!--Описание-->
+            <div class="product-details">
+                <a href="#" class="p-name">Бразильские подвестки</a>
+                <span class="p-price">435.000₽</span>
+            </div>
+
+        </div>
+
+        <!--box6-->
+        <div class="product-box">
+            <!--Фото товара-->
+            <div class="product-img">
+                <!--Корзина товара-->
+            <a href="#" class="add-card">
+                <i class="fas fa-shopping-cart"></i>
+            </a>
+
+                <img src="images/p-6.png " />
+            </div>
+
+            <!--Описание-->
+            <div class="product-details">
+                <a href="#" class="p-name">Обручальные кольца</a>
+                <span class="p-price">37.000₽</span>
+            </div>
+
+        </div>
+
+        <!--box7-->
+        <div class="product-box">
+            <!--Фото товара-->
+            <div class="product-img">
+                <!--Корзина товара-->
+            <a href="#" class="add-card">
+                <i class="fas fa-shopping-cart"></i>
+            </a>
+
+                <img src="images/p-7.png " />
+            </div>
+
+            <!--Описание-->
+            <div class="product-details">
+                <a href="#" class="p-name">Бюджетные серьги</a>
+                <span class="p-price">7.000₽</span>
+            </div>
+
+        </div>
+
+        <!--box8-->
+        <div class="product-box">
+            <!--Фото товара-->
+            <div class="product-img">
+                <!--Корзина товара-->
+            <a href="#" class="add-card">
+                <i class="fas fa-shopping-cart"></i>
+            </a>
+
+                <img src="images/p-8.png " />
+            </div>
+
+            <!--Описание-->
+            <div class="product-details">
+                <a href="#" class="p-name">Кулоны мудрости</a>
+                <span class="p-price">31.000₽</span>
+            </div>
+        </div>
+    </div>
+
+</section>
+<!--СКИДКИ----------------------------------->
+<selection class="sale">
+    <!--sale box-1------->
+    <div class="sale-box">
+        <!--img-->
+        <img src="images/sale-1.jpg" />
+        <!--Текст-->
+        <a href="#">
+            <div class="sale-text">
+                <strong>Кольца с розовым фианитом</strong>
+                <span>Скидка 25%</span>
+            </div>
+        </a>
+
+    </div>
+    
+    <!--sale box-2------->
+    <div class="sale-box">
+        <!--img-->
+        <img src="images/sale-2.jpg" />
+        <!--Текст-->
+        <a href="#">
+            <div class="sale-text">
+                <strong>Кольца с желтым алмазом</strong>
+                <span>Скидка 10%</span>
+            </div>
+        </a>
+
+    </div>
+
+    <!--sale box-3------->
+    <div class="sale-box">
+        <!--img-->
+        <img src="images/sale-3.jpg" />
+        <!--Текст-->
+        <a href="#">
+            <div class="sale-text">
+                <strong>Серебрянные кольца</strong>
+                <span>Скидка 66%</span>
+            </div>
+        </a>
+
+    </div>
+</selection>
+
+<!--Конечный блок-------------------------------->
+<section class="new-arrival">
+    <!--heading-------->
+    <div class="arrival-heading">
+        <strong>Истоки прошлого</strong>
+        <p>Данные украшения созданы по мотивам Древней Руси</p>
+    </div>
+    <!--Товары прошлого-->
+    <div class="product-container">
+        <!--box1-->
+        <div class="product-box">
+            <!--Фото товара-->
+            <div class="product-img">
+                <!--Корзина товара-->
+            <a href="#" class="add-card">
+                <i class="fas fa-shopping-cart"></i>
+            </a>
+                <img src="images/z-1.png " />
+            </div>
+            <!--Описание-->
+            <div class="product-details">
+                <a href="#" class="p-name">Брошка королевы</a>
+                <span class="p-price">56.000₽</span>
+            </div>
+
+        </div>
+
+        <!--box2-->
+        <div class="product-box">
+            <!--Фото товара-->
+            <div class="product-img">
+                <!--Корзина товара-->
+            <a href="#" class="add-card">
+                <i class="fas fa-shopping-cart"></i>
+            </a>
+
+                <img src="images/z-2.png " />
+            </div>
+
+            <!--Описание-->
+            <div class="product-details">
+                <a href="#" class="p-name">Кулон с рубинами</a>
+                <span class="p-price">430.000₽</span>
+            </div>
+
+        </div>
+
+        <!--box3-->
+        <div class="product-box">
+            <!--Фото товара-->
+            <div class="product-img">
+                <!--Корзина товара-->
+            <a href="#" class="add-card">
+                <i class="fas fa-shopping-cart"></i>
+            </a>
+
+                <img src="images/z-3.png " />
+            </div>
+
+            <!--Описание-->
+            <div class="product-details">
+                <a href="#" class="p-name">Брошка из чистого золота</a>
+                <span class="p-price">755.000₽</span>
+            </div>
+
+        </div>
+
+        <!--box4-->
+        <div class="product-box">
+            <!--Фото товара-->
+            <div class="product-img">
+                <!--Корзина товара-->
+            <a href="#" class="add-card">
+                <i class="fas fa-shopping-cart"></i>
+            </a>
+
+                <img src="images/z-4.png " />
+            </div>
+
+            <!--Описание-->
+            <div class="product-details">
+                <a href="#" class="p-name">Фарфоровая брошь</a>
+                <span class="p-price">320.000₽</span>
+            </div>
+
+        </div>
+</div>
+</section>
+
+<!--Сервисы------------------------->
+     <section class="services">
+        <!--box1---------->
+        <div class="services-box">
+            <i class="fas fa-shipping-fast"></i>
+            <span>Бесплатная доставка</span>
+            <p>Доставка уже включенна в стоимость продукта</p>
+        </div>
+         <!--box2---------->
+         <div class="services-box">
+            <i class="fas fa-headphones-alt"></i>
+            <span>Поддержка 24/7</span>
+            <p>Мы ответим на ваш вопрос в любое время дня и ночи</p>
+        </div>
+         <!--box3---------->
+         <div class="services-box">
+            <i class="fas fa-sync"></i>
+            <span>100% Возрат средств</span>
+            <p>Пожизненная гарантия на весь наш ассортимент</p>
+        </div>
+
+
+</section>
+
+
+
+
+</div>
+
+
+
+    
+
+
+
+    </body>  
+</html>
